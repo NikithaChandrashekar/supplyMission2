@@ -43,9 +43,9 @@ function setup() {
 	ground = Bodies.rectangle(width/2, 650, width, 10 , {isStatic:true} );
 	 World.add(world, ground);
 	 
-	//box1 = new Box(500,650,20,100,"red");
-	//box2 = new Box(295,650,20,100,"red");
-	//box3 = new B ox(400,690,200,20,"red");
+	box1 = new Box(500,650,20,100,"red");
+	box2 = new Box(295,650,20,100,"red");
+	box3 = new Box(400,690,200,20,"red");
 
 
 	Engine.run(engine);
@@ -64,9 +64,9 @@ function draw() {
 	Matter.Body.setStatic(packageBody,false);	
 	
   }
-  //box1.display();
-  //box2.display();
-  //box3.display();
+  box1.display();
+  box2.display();
+  box3.display();
 
   Engine.update(engine);
 
